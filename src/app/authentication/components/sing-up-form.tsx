@@ -54,6 +54,8 @@ const SignUpForm = () => {
         email: values.email,
         password: values.password,
         name: values.name,
+        
+       
       },
       {
         onSuccess: () => {

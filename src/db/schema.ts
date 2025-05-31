@@ -18,7 +18,7 @@ export const usersTable = pgTable("users", {
   image: text("image"),
   createdAt: timestamp("created_at").notNull(),
   updatedAt: timestamp("updated_at").notNull(),
-  cns: text("cns").notNull(),
+  cns: text("cns"),
 });
 
 export const usersTableRelations = relations(usersTable, ({ many }) => ({
