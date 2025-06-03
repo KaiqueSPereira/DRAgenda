@@ -3,7 +3,9 @@ export const PageContainer = ({ children }: { children: React.ReactNode }) => {
 };
 
 export const PageHeader = ({ children }: { children: React.ReactNode }) => {
-  return <div className="flex items-center justify-between w-full">{children}</div>;
+  return (
+    <div className="flex w-full items-center justify-between">{children}</div>
+  );
 };
 
 export const PageHeaderContent = ({
@@ -30,10 +32,6 @@ export const PageActions = ({ children }: { children: React.ReactNode }) => {
   return <div className="flex items-center gap-2">{children}</div>;
 };
 
-export const PageContent = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+export const PageContent = ({ children }: { children: React.ReactNode }) => {
   return <div className="space-y-6">{children}</div>;
 };
